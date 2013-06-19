@@ -1,6 +1,10 @@
 
 function readMAC() {
-    return 0
+$.getJSON('test.json', function(data){ 
+    for (keys in data) {
+        $("#pamela p").append(" " +data[keys]["name"]);
+    }
+});
 }
 
 function readMPD() {
